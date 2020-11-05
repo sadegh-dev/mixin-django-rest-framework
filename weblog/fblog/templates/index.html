@@ -1,0 +1,12 @@
+<h1> index page </h1>
+
+<a href="{% url 'add-post' %}">Add Post</a>
+
+
+{% for post in posts %}
+    <h3>context : {{ post.context }}</h3>
+    <h4>date : {{ post.release_datetime }}</h4>
+    <hr />
+{% endfor %}
+
+
